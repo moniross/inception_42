@@ -1,0 +1,67 @@
+# =========================
+# ENV / SECRETS
+# =========================
+**/.env*
+!.env.example
+secrets/
+*.key
+*.crt
+
+# =========================
+# DOCKER
+# =========================
+docker-compose.override.yml
+*.log
+
+# =========================
+# DATABASE DATA (RUNTIME ONLY)
+# =========================
+db_data/
+mysql_data/
+mariadb_data/
+**/data/
+
+# =========================
+# WORDPRESS RUNTIME FILES
+# =========================
+wordpress/wp-content/uploads/
+wordpress/wp-content/cache/
+wordpress/wp-content/upgrade/
+
+# Optional (uncomment if needed)
+# wordpress/wp-content/plugins/
+# wordpress/wp-content/themes/
+
+# =========================
+# NGINX RUNTIME
+# =========================
+nginx/logs/
+nginx/cache/
+
+# =========================
+# PHP / DEPENDENCIES
+# =========================
+vendor/
+composer.lock
+
+# =========================
+# NODE (if used)
+# =========================
+node_modules/
+dist/
+
+# =========================
+# IDE / OS FILES
+# =========================
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# =========================
+# TEMP FILES
+# =========================
+*.tmp
+*.swp
+*.swo
+*.bak
