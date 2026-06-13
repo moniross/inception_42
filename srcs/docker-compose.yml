@@ -24,4 +24,14 @@ networks:
   inception_net:
     driver: bridge
 volumes:
-  db_data
+  db_data:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: /home/mofouzi/data/mariadb
+secrets:
+  db_password:
+    file: ../secrets/db_password.txt
+  db_root_password:
+    file: ../secrets/db_root_password.txt
